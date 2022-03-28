@@ -16,7 +16,7 @@ namespace Part_5._5___Methods
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmMethods());
         }
     }
 }

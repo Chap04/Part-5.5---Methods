@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Part_5._5___Methods
 {
-    public partial class Form1 : Form
+    public partial class frmMethods : Form
     {
-        public Form1()
+        public frmMethods()
         {
             InitializeComponent();
         }
@@ -32,23 +32,42 @@ namespace Part_5._5___Methods
 
         public static void DrawRobot(Label label)
         {
-            label.Text = ($"[00]\n" +
+            label.Text = ($"[0v0]\n" +
                 "/|##|\\\n" +
-                "d  b");
+                "^  ^");
+        }
+        async void WriteJoke(Label label)
+        {
+            label.Text = ("Knock Knock");
+            await Task.Delay(2500);
+            label.Text = ("Who's There?");
+            await Task.Delay(2500);
+            label.Text = ("Candice");
+            await Task.Delay(2500);
+            label.Text = ("Candice Who?");
+            await Task.Delay(2500);
+            label.Text = ("Candice joke get any worse?");
+            await Task.Delay(5000);
+            label.Text = ("");
         }
         private void btnAsciiArt1_Click(object sender, EventArgs e)
         {
-            DrawFrog(lblAsciiOutput);
+            DrawFrog(lblOutput);
         }
 
         private void btnAsciiArt2_Click(object sender, EventArgs e)
         {
-            DrawShrug(lblAsciiOutput);
+            DrawShrug(lblOutput);
         }
 
         private void btnAsciiArt3_Click(object sender, EventArgs e)
         {
-            DrawRobot(lblAsciiOutput);
+            DrawRobot(lblOutput);
+        }
+
+        private void btnKnockKnock_Click(object sender, EventArgs e)
+        {
+            WriteJoke(lblOutput);
         }
     } 
 }

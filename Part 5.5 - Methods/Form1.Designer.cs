@@ -1,6 +1,6 @@
 ﻿namespace Part_5._5___Methods
 {
-    partial class Form1
+    partial class frmMethods
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.btnAsciiArt1 = new System.Windows.Forms.Button();
-            this.lblAsciiOutput = new System.Windows.Forms.Label();
+            this.lblOutput = new System.Windows.Forms.Label();
             this.btnAsciiArt2 = new System.Windows.Forms.Button();
             this.btnAsciiArt3 = new System.Windows.Forms.Button();
             this.btnKnockKnock = new System.Windows.Forms.Button();
-            this.lblKnockKnockOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAsciiArt1
@@ -46,14 +45,14 @@
             this.btnAsciiArt1.UseVisualStyleBackColor = true;
             this.btnAsciiArt1.Click += new System.EventHandler(this.btnAsciiArt1_Click);
             // 
-            // lblAsciiOutput
+            // lblOutput
             // 
-            this.lblAsciiOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAsciiOutput.Location = new System.Drawing.Point(130, 12);
-            this.lblAsciiOutput.Name = "lblAsciiOutput";
-            this.lblAsciiOutput.Size = new System.Drawing.Size(168, 118);
-            this.lblAsciiOutput.TabIndex = 1;
-            this.lblAsciiOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutput.Location = new System.Drawing.Point(130, 12);
+            this.lblOutput.Name = "lblOutput";
+            this.lblOutput.Size = new System.Drawing.Size(168, 251);
+            this.lblOutput.TabIndex = 1;
+            this.lblOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAsciiArt2
             // 
@@ -83,27 +82,20 @@
             this.btnKnockKnock.TabIndex = 4;
             this.btnKnockKnock.Text = "Knock Knock Joke";
             this.btnKnockKnock.UseVisualStyleBackColor = true;
+            this.btnKnockKnock.Click += new System.EventHandler(this.btnKnockKnock_Click);
             // 
-            // lblKnockKnockOutput
-            // 
-            this.lblKnockKnockOutput.Location = new System.Drawing.Point(151, 158);
-            this.lblKnockKnockOutput.Name = "lblKnockKnockOutput";
-            this.lblKnockKnockOutput.Size = new System.Drawing.Size(147, 105);
-            this.lblKnockKnockOutput.TabIndex = 5;
-            // 
-            // Form1
+            // frmMethods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(310, 272);
-            this.Controls.Add(this.lblKnockKnockOutput);
             this.Controls.Add(this.btnKnockKnock);
             this.Controls.Add(this.btnAsciiArt3);
             this.Controls.Add(this.btnAsciiArt2);
-            this.Controls.Add(this.lblAsciiOutput);
+            this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.btnAsciiArt1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmMethods";
+            this.Text = "Part 5.5 - Methods";
             this.ResumeLayout(false);
 
         }
@@ -111,11 +103,10 @@
         #endregion
 
         private System.Windows.Forms.Button btnAsciiArt1;
-        private System.Windows.Forms.Label lblAsciiOutput;
+        private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.Button btnAsciiArt2;
         private System.Windows.Forms.Button btnAsciiArt3;
         private System.Windows.Forms.Button btnKnockKnock;
-        private System.Windows.Forms.Label lblKnockKnockOutput;
     }
 }
 
